@@ -64,28 +64,27 @@ bool stack::empty(){
 
 
 
-
-
 int main()
 {
+
     class stack s;
     s.push(10);
     s.push(20);
     s.push(30);
     cout << s.pop() << " Popped from stack\n";
-   
-    //print top element of stack after poping
     cout << "Top element is : " << s.peek() << endl;
-   
-    //print all elements in stack :
     cout<<"Elements present in stack : ";
     while(!s.empty())
     {
-        // print top element in stack
+
         cout<<s.peek()<<" ";
-        // remove top element in stack
+
         s.pop();
     }
  
     return 0;
+
+
 }
+
+
