@@ -15,6 +15,7 @@ class stack{
         int pop();              //jodi khali na thake taile pop korbo uprer item naile 
         bool empty();
         int peek();
+        void printstack();
 
 };
 
@@ -62,6 +63,17 @@ bool stack::empty(){
 
 }
 
+void stack::printstack(){
+    if(top>=0){
+
+        for (int i = 0; i <= top; i++)
+        {
+            cout<<stk[i]<<endl;
+        }
+        
+
+    }
+}
 
 
 int main()
@@ -71,17 +83,8 @@ int main()
     s.push(10);
     s.push(20);
     s.push(30);
-    cout << s.pop() << " Popped from stack\n";
     cout << "Top element is : " << s.peek() << endl;
-    cout<<"Elements present in stack : ";
-    while(!s.empty())
-    {
-
-        cout<<s.peek()<<" ";
-
-        s.pop();
-    }
- 
+    s.printstack();
     return 0;
 
 
