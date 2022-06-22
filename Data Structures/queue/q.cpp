@@ -9,7 +9,7 @@ class qu{
     public:
     int font,count;
      qu(){
-       font = 1;
+       font = 0;
        count = 0;
      }
     bool isEmpty();
@@ -61,12 +61,7 @@ return 0;
 int qu::dequeue(){
 
     if(count>0){
-        if(font<=count){
-            font++;
-        }else{
-            cout<<"Nothing To remove"<<endl;
-        }
-    
+      font++;   
     }else{
         cout<<"Queue is empty";
     }
@@ -74,6 +69,7 @@ int qu::dequeue(){
 
 }
 int qu::peek(){
+
 
 
 }
@@ -99,23 +95,16 @@ int main(){
 
 class qu test;
 
-test.enqueue(1); //font 1
-test.enqueue(2);    //2
-test.enqueue(3);    //3
-test.enqueue(4);    //4
-test.enqueue(5);    //5
-test.enqueue(6);    //6
-test.enqueue(7);    //7
+test.enqueue(1); 
+test.enqueue(2);    
+test.enqueue(3);    
+test.enqueue(4);    
+test.enqueue(5);    
+test.enqueue(6);    
+test.enqueue(7);    
 test.enqueue(8); 
 
-test.dequeue();
-test.dequeue();
-test.dequeue();
-test.dequeue();
-test.dequeue();
-test.dequeue();
-test.dequeue();
-test.dequeue();
+
 test.print();   
 
 
