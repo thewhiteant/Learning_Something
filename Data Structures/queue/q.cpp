@@ -11,8 +11,8 @@ class qu{
     public:
     int font,count;
      qu(){
-       font = 0;
-       count = 0;
+       font = -1;
+       count = -1;
      }
     bool isEmpty();
     bool isfull();
@@ -62,17 +62,20 @@ return 0;
 
 int qu::dequeue(){
 
-    if(count>0){
+    if(font<=(count)){
       font++;   
     }else{
-        cout<<"Queue is empty";
+        cout<<"Queue is empty"<<endl;
     }
 
 
 }
 int qu::peek(){
 
-    if()
+    if(count>0){
+        int x = q[font];
+        return x;
+    }
 
 }
 
@@ -80,13 +83,20 @@ int qu::peek(){
 
 
 int qu::print(){
+    
+    if(count>=font){
+
+        for (int i = font; i <= count; i++)
+        {
+            cout << q[i] << endl;
+        }
+    }else{
+        cout<<"Nothing to print"<<endl;
+    }
     cout<<"Font Value: "<<font<<endl;
     cout<<"Count Value: "<<count<<endl;
     cout<<"All Data"<<endl;
-    for (int i = font; i <= count; i++)
-    {
-        cout<<q[i]<<endl;
-    }
+
     
 
 }
@@ -104,14 +114,13 @@ test.enqueue(2);
 test.enqueue(3);    
 test.enqueue(4);    
 test.enqueue(5);    
-test.enqueue(6);    
-test.enqueue(7);    
-test.enqueue(8); 
 
-
-test.print();   
+test.dequeue();
+test.dequeue();
+test.dequeue();
 
 
 
+test.print();
     return 0;
 }
