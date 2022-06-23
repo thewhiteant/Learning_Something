@@ -1,9 +1,11 @@
+
 #include<iostream>
 
 using namespace std;
 
 class node{
 public:
+    node* prev;
     node* next;
     int data;
 
@@ -13,7 +15,7 @@ public:
 
 
 int main(){
-
+node*prevhead = NULL;
 node*head = NULL;
 node* one  = NULL;
 node* two = NULL;
@@ -30,9 +32,13 @@ two -> data = 2;
 three -> data = 3;
 four -> data = 4;
 
+one -> prev = NULL;
 one -> next = two;
+two -> prev = one;
 two -> next = three;
+three -> prev = two;
 three -> next = four;
+four -> prev = three;
 four -> next = NULL;
 
 
@@ -40,16 +46,15 @@ head = one;
 
 
 
-
 while(head!=NULL){
 
-    cout << head ->data <<endl ;
+    cout <<"font: "<< head ->data <<endl ;
     head = head -> next;
-
+   
 
 }
 
-
+cout<< four -> prev -> data <<endl;
 
 
 
