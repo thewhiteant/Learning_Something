@@ -55,7 +55,7 @@ return temp;
 int main(){
 
 int k[5] = {100,12,45,450,52};
-char ck[5] = {'g','d','s','a','l'};
+
 
 cout<<maxo(k,5)<<endl;
 cout<<mino(k,5)<<endl;
