@@ -83,6 +83,8 @@ int main()
     s.push(10);
     s.push(20);
     s.push(30);
+    s.push(60);
+
     cout << "Top element is : " << s.peek() << endl;
     s.printstack();
     return 0;

@@ -38,20 +38,6 @@ return temp;
 
 }
 
-char minoc(int ar[],int n){
-
-      int temp = ar[0];
-      for (int i = 0; i < n; i++)
-      {
-              if(temp > ar[i] ){
-        temp = ar[i];
-      }}     
-return temp; 
-
-}
-
-
-
 int main(){
 
 int k[5] = {100,12,45,450,52};
@@ -61,8 +47,6 @@ cout<<maxo(k,5)<<endl;
 cout<<mino(k,5)<<endl;
 
 
-cout<<maxoc(ck,5)<<endl;
-cout<<minoc(ck,5)<<endl;
 
 
 
