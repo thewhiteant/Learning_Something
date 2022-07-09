@@ -3,10 +3,11 @@ using namespace std;
 class node{
 
 public:
+int data;
 node* left;
 node* right;
 
-node(int d);
+node(int data);
 
 
 };
