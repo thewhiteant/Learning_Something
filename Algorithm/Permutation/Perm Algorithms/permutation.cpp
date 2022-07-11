@@ -6,20 +6,19 @@ void perm(int a[],int k,int n){
 
 if (k==n)
 {
-     cout<<"{";
+
     for (int i = 0; i < n; i++)
     {
         cout<<a[i]<<",";
     }
-    cout<<"},";
+
 
 }else{
-    cout<<"{";
     for (int i = k; i < n; i++)
     {
         cout<<a[i]<<",";
     }
-    cout<<"},";
+
 
 }
 
@@ -40,8 +39,8 @@ int main(int argc, char const *argv[])
 {
 
 int sq[5] = {1,2,3,4,5};
-perm(sq,1,5);
-     
+perm(sq,5,5);
+      
 
 
 

@@ -4,8 +4,7 @@ using namespace std;
 
 int seqs(int a[],int x,int n){
 
-        a[0] = x;
-        while(a[n]!=x){
+         while(a[n]!=x){
             n--;
 
         }
