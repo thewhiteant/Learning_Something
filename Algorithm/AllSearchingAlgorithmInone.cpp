@@ -86,7 +86,7 @@ int bineryS(int a[],int n,int x){
     sort(x, x + n);
     cout<<"[26500] AS SeqS: "<<seqsearch(x,n,26500)<<endl;
     cout<<"\n\n";
-
+    print(x,n);
 
     cout<<"Binery Search"<<endl; 
     cout<<"[26500] R_BinS: "<<recbin(x,0,n,26500)<<endl;
