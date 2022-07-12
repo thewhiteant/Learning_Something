@@ -30,6 +30,7 @@ int main(int argc, char const *argv[])
     int a[10] = {1,4,5,6,7,8,99,152,264,353}; 
 
     cout<<binsearc(a,0,10,353);
+    
 
     return 0;
 }
