@@ -1,4 +1,6 @@
 #include <bits/stdc++.h>
+#include<iostream>
+#include<cmath>
 #include<cstdlib>
 #include<cstring>
 #define max 100
@@ -29,19 +31,23 @@ int seqsearch(int a[],int n,int x){
  
 }
 
-int recbin(int a[],int low, int high,int x){
-    if(high<low){ return 0;}
-    else{
-     int mid = (low+high)/2;
-     if(a[mid] > x){
-            recbin(a,low,mid-1,x);
-    }else if(a[mid] < x){
-            recbin(a,mid+1,high,x);
-    }else if(a[mid]==x){
-            return mid;
-        }
 
+
+
+int recbin(int arr[], int l, int r, int x)
+{
+    if (r >= l) {
+        int mid = l + (r - l) / 2;
+  
+
+        if (arr[mid] == x)
+            return mid;
+        if (arr[mid] > x)
+            return recbin(arr, l, mid - 1, x);
+        return recbin(arr, mid + 1, r, x);
     }
+
+    return 0;
 }
 
 int bineryS(int a[],int low,int n,int x){
@@ -164,6 +170,26 @@ int fib(int a[],int n,int x){
 
 }
 
+int jumpS(int a[], int n, int item) {
+   int i = 0;
+   int m = sqrt(n); 
+
+   while(a[m] <= item && m < n) { 
+  
+      i = m;  
+      m += sqrt(n);
+      if(m > n - 1)  
+         return 0; 
+   }
+
+   for(int x = i; x<m; x++) { 
+      if(a[x] == item)
+         return x; 
+   }
+   return 0;
+}
+
+
  int main(){
 
     int x[max],n;
@@ -190,6 +216,7 @@ int fib(int a[],int n,int x){
     cout<<"[26500] AS SeqS: "<<seqsearch(x,n,sear)<<endl;
     cout<<"\n";
     cout<<"Binery Search"<<endl; 
+<<<<<<< Updated upstream
     cout<<"[26500] R_BinS: "<<recbin(x,0,n,sear)<<endl;
     cout<<"[26500] BinS: "<<bineryS(x,0,n,sear)<<endl;
     cout<<"\n";
@@ -208,5 +235,27 @@ int fib(int a[],int n,int x){
     cout << "[26500] FibS: " << fib(x, n, sear) << endl;
     cout << "\n";
 
+=======
+    cout<<"[26500] R_BinS: "<<recbin(x,0,n,26500)<<endl;
+    cout<<"[26500] BinS: "<<bineryS(x,n,26500)<<endl;
+    
+    cout<<"\n\n";
+ 
+ 
+    cout<<"Jump Search"<<endl; 
+    cout<<"[26500] JumpS: "<<jumpS(x,n,26500)<<endl;
+    cout<<"\n\n";
+ 
+ 
+ 
+
+ 
+ 
+ 
+>>>>>>> Stashed changes
     return 0;
+ 
+ 
+ 
+ 
  }
