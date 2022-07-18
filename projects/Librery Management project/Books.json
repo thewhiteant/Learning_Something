@@ -40,7 +40,7 @@
             "auth": "dawda",
             "price": "100",
             "type": "we",
-            "qntt": 12
+            "qntt": 11
         },
         "7": {
             "name": "PHJCn uiegbfsdv",
@@ -54,7 +54,7 @@
             "auth": "Lan Goodfellow",
             "price": "1200",
             "type": "Programming",
-            "qntt": 1
+            "qntt": 0
         }
     }
 }

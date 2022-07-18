@@ -36,8 +36,16 @@
             "name": "Rafi",
             "address": "148/7",
             "phone": "1712373025",
-            "haveB": null,
+            "haveB": "Deep Learning",
             "total": 1,
+            "fav": "none"
+        },
+        "6": {
+            "name": "fgdgdhbdh",
+            "address": "rftghgfjgfjfg",
+            "phone": "1234567891",
+            "haveB": "nope",
+            "total": 0,
             "fav": "none"
         }
     }
