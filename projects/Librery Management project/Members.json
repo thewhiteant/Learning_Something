@@ -36,11 +36,12 @@
             "name": "Rafi",
             "address": "148/7",
             "phone": "1712373025",
-            "haveB": null,
+            "haveB": "Deep Learning",
             "total": 1,
             "fav": "none"
         },
         "6": {
+<<<<<<< HEAD
             "name": "oppi",
             "address": "mongol groho",
             "phone": "1234567890",
@@ -53,6 +54,12 @@
             "address": "unkno wn",
             "phone": "0987654321",
             "haveB": "no",
+=======
+            "name": "fgdgdhbdh",
+            "address": "rftghgfjgfjfg",
+            "phone": "1234567891",
+            "haveB": "nope",
+>>>>>>> b6678cc8e86816851d6e5a44aa802bc2b36c252e
             "total": 0,
             "fav": "none"
         }
