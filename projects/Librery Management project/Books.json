@@ -54,7 +54,7 @@
             "auth": "Lan Goodfellow",
             "price": "1200",
             "type": "Programming",
-            "qntt": 1
+            "qntt": 0
         }
     }
 }

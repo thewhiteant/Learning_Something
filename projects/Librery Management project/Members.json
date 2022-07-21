@@ -39,6 +39,22 @@
             "haveB": null,
             "total": 1,
             "fav": "none"
+        },
+        "6": {
+            "name": "oppi",
+            "address": "mongol groho",
+            "phone": "1234567890",
+            "haveB": "Deep Learning",
+            "total": 1,
+            "fav": "none"
+        },
+        "7": {
+            "name": "konamona",
+            "address": "unkno wn",
+            "phone": "0987654321",
+            "haveB": "no",
+            "total": 0,
+            "fav": "none"
         }
     }
 }
