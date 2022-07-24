@@ -130,64 +130,60 @@ int expS(int a[],int n,int x){
 
 }
 
-int fib(int a[],int n,int x){
-    int off;
-    int one = 0;
-    int two = 1;
-    int fn = one  + two;
+// int fib(int a[],int n,int x){
+//     int off;
+//     int one = 0;
+//     int two = 1;
+//     int fn = one  + two;
 
-    while (fn<n)
-    {
-        one = two;
-        two = fn;
-        fn = one + two;
-         off = -1;
+//     while (fn<n)
+//     {
+//         one = two;
+//         two = fn;
+//         fn = one + two;
+//          off = -1;
 
-    }
-    while (fn>1)
-    {
-        int i = min(off+fn,n-1);
-        if (a[i]<x)
-        {
-            fn = one;
-            one = two;
-            two = fn + one;
-           int off = i;
-        }else if(a[i]>x){
-            fn = two;
-            one = one - two;
-            two = fn - one;
-        }else {
-            return i;
-        }
+//     }
+//     while (fn>1)
+//     {
+//         int i = min(off+fn,n-1);
+//         if (a[i]<x)
+//         {
+//             fn = one;
+//             one = two;
+//             two = fn + one;
+//            int off = i;
+//         }else if(a[i]>x){
+//             fn = two;
+//             one = one - two;
+//             two = fn - one;
+//         }else {
+//             return i;
+//         }
         
-    }
+//     }
     
     
+// }
 
+// int jumpS(int a[], int n, int item) {
+//    int i = 0;
+//    int m = sqrt(n); 
 
-
-
-}
-
-int jumpS(int a[], int n, int item) {
-   int i = 0;
-   int m = sqrt(n); 
-
-   while(a[m] <= item && m < n) { 
+//    while(a[m] <= item && m < n) { 
   
-      i = m;  
-      m += sqrt(n);
-      if(m > n - 1)  
-         return 0; 
-   }
+//       i = m;  
+//       m += sqrt(n);
+//       if(m > n - 1)  
+//          return 0; 
+//    }
 
-   for(int x = i; x<m; x++) { 
-      if(a[x] == item)
-         return x; 
-   }
-   return 0;
-}
+//    for(int x = i; x<m; x++) { 
+//       if(a[x] == item)
+//          return x; 
+//    }
+//    return 0;
+// }
 
 
  int main(){
@@ -216,7 +212,7 @@ int jumpS(int a[], int n, int item) {
     cout<<"[26500] AS SeqS: "<<seqsearch(x,n,sear)<<endl;
     cout<<"\n";
     cout<<"Binery Search"<<endl; 
-<<<<<<< Updated upstream
+
     cout<<"[26500] R_BinS: "<<recbin(x,0,n,sear)<<endl;
     cout<<"[26500] BinS: "<<bineryS(x,0,n,sear)<<endl;
     cout<<"\n";
@@ -232,27 +228,10 @@ int jumpS(int a[], int n, int item) {
     cout << "[26500] ExpS: " << expS(x, n, sear) << endl;
     cout << "\n";
     cout << "Fibbonacci Search" << endl;
-    cout << "[26500] FibS: " << fib(x, n, sear) << endl;
+    // cout << "[26500] FibS: " << fib(x, n, sear) << endl;
     cout << "\n";
 
-=======
-    cout<<"[26500] R_BinS: "<<recbin(x,0,n,26500)<<endl;
-    cout<<"[26500] BinS: "<<bineryS(x,n,26500)<<endl;
-    
-    cout<<"\n\n";
- 
- 
-    cout<<"Jump Search"<<endl; 
-    cout<<"[26500] JumpS: "<<jumpS(x,n,26500)<<endl;
-    cout<<"\n\n";
- 
- 
- 
 
- 
- 
- 
->>>>>>> Stashed changes
     return 0;
  
  
