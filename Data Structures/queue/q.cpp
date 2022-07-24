@@ -44,7 +44,7 @@ bool qu::isfull(){
 int qu::enqueue(int data){
     if(count<=max){
 
-        if(count == 0){
+        if(count == -1){
             q[++count] = data;
             font++;
 
@@ -84,7 +84,7 @@ int qu::peek(){
 
 int qu::print(){
     
-    if(count>=font){
+    if(count>font){
 
         for (int i = font; i <= count; i++)
         {
@@ -95,7 +95,7 @@ int qu::print(){
     }
     cout<<"Font Value: "<<font<<endl;
     cout<<"Count Value: "<<count<<endl;
-    cout<<"All Data"<<endl;
+
 
     
 
@@ -109,18 +109,16 @@ int main(){
 
 class qu test;
 
-test.enqueue(1); 
-test.enqueue(2);    
-test.enqueue(3);    
-test.enqueue(4);    
-test.enqueue(5);    
+test.enqueue(100);
+test.enqueue(200);
+test.enqueue(300);
 
-test.dequeue();
-test.dequeue();
-test.dequeue();
+
 
 
 
 test.print();
+
+
     return 0;
 }
